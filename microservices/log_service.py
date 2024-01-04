@@ -14,8 +14,8 @@ from flask import (
 def create_app(test_config=None):
     
     app = Flask(__name__, instance_relative_config=True)
-    if __name__ == '__main__':
-        app.run(debug=True, port=5003)
+   # if __name__ == '__main__':
+   #     app.run(debug=True, port=5003)
 
     @app.route('/log_service',methods = ['POST'])
     def authentication_request():
