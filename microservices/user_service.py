@@ -9,11 +9,11 @@ from flask import (
     jsonify,
 )  # se importa la librería principal de flask
 from requests_cache import CachedSession # se importa la libreria de la cache
+import os
 
-def create_app(test_config=None):
-    
+def create_app(authentication_service_port,prediction_service_port,log_service_port,test_config=None):
     app = Flask(__name__, instance_relative_config=True)
-    @app.route('/service_request',methods = ['POST'])
+    @app.route('/user_service',methods = ['POST'])
     def predict_request():
         """Microservicio que interactua con el usuario"""
         
@@ -45,7 +45,7 @@ def create_app(test_config=None):
             abort(404, description=error)         
 
         # Validación de usuario autorizado
-        response = requests.post('http://localhost:5001/authentication_request', headers=request.headers)
+        response = requests.post('http://localhost:'+str(authentication_service_port)+'/authentication_service', headers=request.headers)
         if response.status_code != 200:
             error = "Falló la autenticación del usuario"
             text=[error]
@@ -60,8 +60,7 @@ def create_app(test_config=None):
 
         # Predicción del riesgo cardíaco
         data = {"nivel_colesterol" : nivel_colesterol, "presion_arterial" : presion_arterial, "azucar" : azucar, "edad" : edad, "sobrepeso" : sobrepeso, "tabaquismo" : tabaquismo}
-        response = session.post('http://localhost:5002/prediction_request', data=data)
-        #response = requests.post('http://localhost:5002/prediction_request', data=data)
+        response = session.post('http://localhost:'+str(prediction_service_port)+'/prediction_service', data=data)
         if response.status_code != 200:
             error = "Falló la predicción"
             text=[error]
@@ -77,7 +76,7 @@ def create_app(test_config=None):
       
         # Logueo de la solicitud en la bitácora
         data = {"key" : key, "nivel_colesterol" : nivel_colesterol, "presion_arterial" : presion_arterial, "azucar" : azucar, "edad" : edad, "sobrepeso" : sobrepeso, "tabaquismo" : tabaquismo, "resultado" : str(float(resultados[0])), "riesgo_cardiaco" : resultados[1], "tiempo_procesamiento" : tiempo_procesamiento, "fecha" : fecha }
-        response = requests.post('http://localhost:5003/log_request', data=data)
+        response = requests.post('http://localhost:'+str(log_service_port)+'/log_service', data=data)
         if response.status_code != 200:
             error = "Falló el logeuo en la bitacora"
             text=[error]
@@ -136,10 +135,13 @@ def datos_usuario_validos(key, nivel_colesterol, presion_arterial, azucar, edad,
     return error
 
 def printer(message):
-    """imprime un mensaje por consola y también lo retorna formateado"""   
+    """Imprime un mensaje por consola y también lo retorna formateado"""   
 
     print("\n------------------------------------------------------------------------------------------")
-    for m in message:
-        print(m)
+    if type(message) is list:
+        for m in message:
+            print(m)
+    else:
+        print(message)
     print("------------------------------------------------------------------------------------------\n")
     return jsonify(message)

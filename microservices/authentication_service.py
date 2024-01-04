@@ -17,7 +17,7 @@ def create_app(test_config=None):
     if __name__ == '__main__':
         app.run(debug=True, port=5001)
 
-    @app.route('/authentication_request',methods = ['POST'])
+    @app.route('/authentication_service',methods = ['POST'])
     def authentication_request():
         """Microservicio que autoriza al usuario"""
 

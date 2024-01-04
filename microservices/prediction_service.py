@@ -20,7 +20,7 @@ def create_app(test_config=None):
     if __name__ == '__main__':
         app.run(debug=True, port=5002)
 
-    @app.route('/prediction_request',methods = ['POST'])
+    @app.route('/prediction_service',methods = ['POST'])
     def authentication_request():
         """Microservicio que realiza la predicción con el modelo de machine learning"""
 
