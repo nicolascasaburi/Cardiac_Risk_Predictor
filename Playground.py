@@ -2,12 +2,38 @@ import requests
 import json
 import time
 
-# Cargar los primeros 10 datos del archivo JSON
+# URL del microservicio user_service
+url_microservicio = "http://127.0.0.1:5000/user_service"
+
+# Test con un usuario Premium
+headers = {
+            'Authorization': '7803f9b4f94ab605f48087da2c2a1627',
+            'Content-Type': 'application/json',
+        }
+
+# Cargar los primeros 10 datos del archivo datos_generados.json
+
+with open("datos_generados_con_errores.json", "r") as archivo:
+    datos = json.load(archivo)
+
+print("=" * 50)
+print("Test de llamados al microservicio user_service con con parámetros faltantes y con datos fuera de rango")
+for dato in datos:
+    respuesta = requests.post(url_microservicio, json=dato, headers=headers)
+
+    # Imprimir la respuesta del microservicio
+    print(f"Solicitud POST enviada para el dato: {dato}")
+    print(f"Respuesta del microservicio: {respuesta.text}")
+    print("=" * 50)
+
+print("Todas las solicitudes POST han sido enviadas.")
+
+
+# Cargar los primeros 10 datos del archivo datos_generados.json
 with open("datos_generados.json", "r") as archivo:
     datos = json.load(archivo)[:10]
 
-# URL del microservicio user_service
-url_microservicio = "http://127.0.0.1:5000/user_service"
+
 
 # Test con un usuario Freemium
 headers = {
@@ -40,7 +66,7 @@ with open("datos_generados.json", "r") as archivo:
 # URL del microservicio user_service
 url_microservicio = "http://127.0.0.1:5000/user_service"
 
-# Test con un usuario Premiun
+# Test con un usuario Premium
 headers = {
             'Authorization': '7803f9b4f94ab605f48087da2c2a1627',
             'Content-Type': 'application/json',
