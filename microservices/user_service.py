@@ -26,7 +26,7 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
         start_counter = time.time()
         text = []
 
-        # Se obtienen los datos de entrada
+        # Se obtienen los datos de entrada - en formato JSON
         key = request.headers.get('Authorization')
         nivel_colesterol = request.args.get("nivel_colesterol")
         presion_arterial = request.args.get("presion_arterial")
