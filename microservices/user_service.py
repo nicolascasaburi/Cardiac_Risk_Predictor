@@ -104,17 +104,17 @@ def datos_usuario_validos(key, nivel_colesterol, presion_arterial, azucar, edad,
         return error
 
     # Validación de existencia de los datos del paciente
-    if not nivel_colesterol:
+    if nivel_colesterol is None:
         error = error + 'nivel_colesterol '
-    if not presion_arterial:
+    if presion_arterial is None:
         error = error + 'presion_arterial '
-    if not azucar:
+    if azucar is None:
         error = error + 'azucar '
-    if not edad:
+    if edad is None:
         error = error + 'edad '
-    if not sobrepeso:
+    if sobrepeso is None:
         error = error + 'sobrepeso '
-    if not tabaquismo:
+    if tabaquismo is None:
         error = error + 'tabaquismo '
     if error != '':
         error = "Faltan los parametros: " + error
