@@ -35,14 +35,7 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
         edad = datos_json.get("edad")
         sobrepeso = datos_json.get("sobrepeso")
         tabaquismo = datos_json.get("tabaquismo")
-        
-        #nivel_colesterol = request.args.get("nivel_colesterol")
-        #presion_arterial = request.args.get("presion_arterial")
-        #azucar = request.args.get("azucar")
-        #edad = request.args.get("edad")
-        #sobrepeso = request.args.get("sobrepeso")
-        #tabaquismo = request.args.get("tabaquismo")
-        
+                
         # Validación de los datos ingresados
         error = datos_usuario_validos(key,nivel_colesterol,presion_arterial,azucar,edad,sobrepeso,tabaquismo)
         if error == '':
