@@ -16,7 +16,7 @@ Instalación del entorno virtual
    
 
 
-3) Instalación y despliegue de ambiente para prediction_service
+2) Instalación y despliegue de ambiente para prediction_service
    
     python3 -m venv .venv
    
@@ -34,21 +34,32 @@ Instalación del entorno virtual
    
     flask --app prediction_service.py run --port=5002 --debug
 
-5) Instalación y despliegue de ambiente para log_service
-python3 -m venv .venv
-. .venv/bin/activate
-flask --app log_service.py run --port=5003 --debug
+3) Instalación y despliegue de ambiente para log_service
 
-6) Instalación y despliegue de ambiente para user_service
-python3 -m venv .venv
-. .venvj/bin/activate
-pip install requests_cache
-flask --app 'user_service:create_app(5001,5002,5003)' run --port=5000 --debug
+    python3 -m venv .venv
+    . .venv/bin/activate
+    flask --app log_service.py run --port=5003 --debug
+
+
+4) Instalación y despliegue de ambiente para user_service
+
+    python3 -m venv .venv
+
+    . .venvj/bin/activate
+
+    pip install requests_cache
+
+    flask --app 'user_service:create_app(5001,5002,5003)' run --port=5000 --debug
+
 
 
 Instalación de docker-compose
-apt install docker-compose
+
+    apt install docker-compose
+
 
 Despliegue de contenedor Mongodb
-cd /carpeta contenedora del archivo docker-compose.yml
-docker-compose up -d
+
+    cd /carpeta contenedora del archivo docker-compose.yml
+    
+    docker-compose up -d
