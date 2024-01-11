@@ -1,0 +1,17 @@
+# Entornos virtuales
+.env
+.envj
+.venv
+.venvj
+env/
+envj/
+venv/
+venvj/
+ENV/
+ENVJ/
+env.bak/
+envj.bak/
+venv.bak/
+venvj.bak/
+/microservices/.venvj/
+/microservices/.venv/
