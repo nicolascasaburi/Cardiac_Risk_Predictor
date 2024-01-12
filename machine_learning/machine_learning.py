@@ -5,6 +5,7 @@
 import numpy as np #Manejar los arreglos con los datos
 import pandas as pd #Tomar el dataset y convertir datos categoricos
 import matplotlib.pyplot as plt #Para graficar
+import pickle
 import tensorflow as tf
 from tensorflow.keras import models #Crear/entrenar/evaluar el modelo
 from tensorflow.keras.layers import Dense, Dropout #Capas densas para la red
@@ -67,15 +68,14 @@ print("Datos a predecir:")
 print(X_train[:3])
 result = model.predict(scaled_X_train[:3])
 print("Resultados obtenidos:")
-#print(result.round())
 print(result)
 print("Valores correctos:")
 print(Y_train[:3])
 
-import pickle
-model_pkl_file = "model.pkl"  
-
-with open(model_pkl_file, 'wb') as file:  
+# Se guarda el scaler
+scaler_pkl_file = "scaler.pkl"  
+with open(scaler_pkl_file, 'wb') as file:  
     pickle.dump(scaler, file)
 
+# Se guarda el modelo
 model.save("model.keras")
