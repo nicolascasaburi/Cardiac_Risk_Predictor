@@ -1,9 +1,16 @@
 import os
 
+####### PUERTOS #######################
+
+user_service_port = 5000
+authentication_service_port = 5001
+prediction_service_port = 5002
+log_service_port = 5003
+
+#######################################
+
 def main():
     """Menú interactivo"""
-    
-    print("*** EVALUACION DE RIESGO CARDIACO ***")
 
     while(True):
         print("\nElija una opción y precione enter:")
@@ -35,25 +42,28 @@ def cargar_db():
     {'key': '33d253c53e5739e7024a4f25abc81b22', 'tipo': 'freemium'},
     {'key': 'fb2f370aa9053ca5bb107d888180f94a', 'tipo': 'premium'},
     ]
-    db['usuarios'].insert_many(usuarios)
+    for user in usuarios:
+        result = db['usuarios'].find_one(user)
+        if result is None:
+            db['usuarios'].insert_one(user)
 
 def levantar_servicios():
     """Levanta todos los servicios con los puertos definidos"""
 
     # Servicio Authentication
-    command = "cd microservices; . .venv/bin/activate; flask --app authentication_service.py run --port 5001 &"
+    command = "cd microservices; . .venv/bin/activate; flask --app authentication_service.py run --port "+str(authentication_service_port)+" &"
     os.system(command)
 
     # Servicio Prediction
-    command = "cd microservices; . .venv/bin/activate; flask --app prediction_service.py run --port 5002 &"
+    command = "cd microservices; . .venv/bin/activate; flask --app prediction_service.py run --port "+str(prediction_service_port)+" &"
     os.system(command)
 
     # Servicio Log
-    command = "cd microservices; . .venv/bin/activate; flask --app log_service.py run --port 5003 &"
+    command = "cd microservices; . .venv/bin/activate; flask --app log_service.py run --port "+str(log_service_port)+" &"
     os.system(command)
 
     # Servicio User
-    command = "cd microservices; . .venv/bin/activate; flask --app 'user_service:create_app(5001,5002,5003)' run --port 5000 &"
+    command = "cd microservices; . .venv/bin/activate; flask --app 'user_service:create_app("+str(authentication_service_port)+","+str(prediction_service_port)+","+str(log_service_port)+")' run --port "+str(user_service_port)+" &"
     os.system(command)
 
 def bajar_servicios():
