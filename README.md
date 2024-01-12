@@ -70,8 +70,11 @@
 Corriendo la aplicación Playground.py se pueden testear los microservicios:
 
     authentication_service
+
     prediction_service
+
     log_service
+
     user_service
 
 # Generador JSON
@@ -79,6 +82,7 @@ Corriendo la aplicación Playground.py se pueden testear los microservicios:
 Existen dos aplicaciones que permiten generar objetos de tipo JSON
 
     generadorJSON.py: genera el archivo datos_generados.json utilizado para testear los microservicios user_service y prediction_service.
+    
     generador_log_JSON.py: genera el archivo datos_generados_log.json utilizado para testear el microservicio log_service.
 
 # Main
