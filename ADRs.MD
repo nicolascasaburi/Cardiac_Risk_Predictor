@@ -24,8 +24,8 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
 6. **Modelo de Red Neuronal:**
    - Se elige un modelo secuencial para la red neuronal, que se entrena con datos clínicos para diagnosticar riesgo cardíaco.
 
-7. **Formato de Modelo Entrenado:**
-   - El modelo entrenado se guarda en formato pickle (model.pkl) para facilitar su carga y uso posterior.
+7. **Biblioteca para la creación y entrenamiento del Modelo:**
+   - Se utiliza la biblioteca Keras para la creación y entrenamiento del modelo, dada su compatibilidad con otras bibliotecas como TensorFlow, su simplicidad y modularidad.
 
 8. **Seguridad:**
    - La autenticación de los servicios se realiza mediante API keys, verificando la existencia de la clave en la base de datos. Además, se implementa un control de límites de solicitudes por minuto según el tipo de cuenta (FREEMIUM o PREMIUM).
@@ -48,7 +48,7 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
    - Se elige un modelo secuencial para la red neuronal, el cual es entrenado con datos clínicos para clasificar el riesgo cardíaco.
 
 4. **Persistencia del Modelo:**
-   - El modelo entrenado se guarda en un archivo pickle (model.pkl) para su posterior carga y uso.
+   - El modelo entrenado se guarda en un archivo (model.keras) para su posterior carga y uso.
 
 5. **Funciones Principales:**
    - La aplicación machine_learning se encarga de crear, compilar, entrenar y guardar el modelo. Además, proporciona funciones para cargar el modelo, normalizar datos y realizar predicciones.
@@ -84,13 +84,13 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
    - Recibe datos clínicos, carga el modelo previamente entrenado, normaliza los datos y realiza predicciones de riesgo cardíaco.
 
 2. **Carga del Modelo:**
-   - Levanta el modelo entrenado desde el archivo pickle (model.pkl).
+   - Levanta el modelo entrenado utilizando la libreria de Keras.
 
 3. **Normalización de Datos:**
    - Normaliza los datos clínicos antes de realizar la predicción.
 
 4. **Respuesta:**
-   - Devuelve el resultado de la predicción (BAJO o ALTO nivel de riesgo cardíaco).
+   - Devuelve el resultado numérico de la predicción y también un índice del riesgo cardíado (BAJO o ALTO).
 
 ## ADR: Microservicio log_service
 
