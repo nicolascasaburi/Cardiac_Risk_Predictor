@@ -48,7 +48,7 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
    - Se elige un modelo secuencial para la red neuronal, el cual es entrenado con datos clínicos para clasificar el riesgo cardíaco.
 
 4. **Persistencia del Modelo:**
-   - El modelo entrenado se guarda en un archivo (model.keras) para su posterior carga y uso.
+   - El modelo entrenado se guarda en un archivo (model.keras) para su posterior carga y uso. También, el scaler utilizado en el entrenamiento del modelo se guarda en un archivo scarler.pkl para transformar los datos ingresados por el usuario.
 
 5. **Funciones Principales:**
    - La aplicación machine_learning se encarga de crear, compilar, entrenar y guardar el modelo. Además, proporciona funciones para cargar el modelo, normalizar datos y realizar predicciones.
