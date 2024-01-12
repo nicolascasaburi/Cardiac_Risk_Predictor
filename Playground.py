@@ -44,6 +44,35 @@ print(f"Respuesta del microservicio: {respuesta.text}")
 print("=" * 50)
 
 
+#-------------------------------------------------------------
+
+
+# TEST DEL microservicio log_service
+# Cargar los datos del archivo "datos_generados_log" JSON
+with open("datos_generados_log.json", "r") as archivo:
+    datos = json.load(archivo)
+
+# URL del microservicio log_service
+url_microservicio = "http://127.0.0.1:5003/log_service"
+
+
+# Enviar cada dato como una solicitud POST al microservicio
+print("=" * 50)
+print("Test de 100 llamados al microservicio log_service")
+for dato in (datos):
+    respuesta = requests.post(url_microservicio, data=dato)
+
+    # Imprimir la respuesta del microservicio
+    print(f"Solicitud POST enviada para el dato: {dato}")
+    print(f"Respuesta del microservicio: {respuesta.text}")
+    print("=" * 50)
+
+print("Todas las solicitudes POST han sido enviadas.")
+
+
+#-------------------------------------------------------------
+
+
 # TEST DEL microservicio user_service
 # URL del microservicio user_service
 url_microservicio = "http://127.0.0.1:5000/user_service"
@@ -133,11 +162,14 @@ for i, dato in enumerate(datos, start=1):
 print("Todas las solicitudes POST han sido enviadas.")
 
 
+#-------------------------------------------------------------
+
+
 # Cargar los datos del archivo JSON
 with open("datos_generados.json", "r") as archivo:
     datos = json.load(archivo)
 
-# URL del microservicio user_service
+# URL del microservicio prediction_service
 url_microservicio = "http://127.0.0.1:5002/prediction_service"
 
 
@@ -154,24 +186,4 @@ for dato in (datos):
 
 print("Todas las solicitudes POST han sido enviadas.")
 
-# Cargar los datos del archivo "datos_generados_log" JSON
-with open("datos_generados_log.json", "r") as archivo:
-    datos = json.load(archivo)
 
-# URL del microservicio user_service
-url_microservicio = "http://127.0.0.1:5003/log_service"
-
-
-
-# Enviar cada dato como una solicitud POST al microservicio
-print("=" * 50)
-print("Test de 100 llamados al microservicio log_service")
-for dato in (datos):
-    respuesta = requests.post(url_microservicio, data=dato)
-
-    # Imprimir la respuesta del microservicio
-    print(f"Solicitud POST enviada para el dato: {dato}")
-    print(f"Respuesta del microservicio: {respuesta.text}")
-    print("=" * 50)
-
-print("Todas las solicitudes POST han sido enviadas.")
