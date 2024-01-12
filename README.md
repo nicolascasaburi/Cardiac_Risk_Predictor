@@ -1,6 +1,6 @@
-Instalación del entorno virtual
+# Instalación del entorno virtual necesario
 
-1) Instalación y despliegue de ambiente para authentication_service
+# Instalación y despliegue de ambiente para authentication_service
 
     python3 -m venv .venv
 
@@ -16,7 +16,7 @@ Instalación del entorno virtual
    
 
 
-2) Instalación y despliegue de ambiente para prediction_service
+# Instalación y despliegue de ambiente para prediction_service
    
     python3 -m venv .venv
    
@@ -34,18 +34,19 @@ Instalación del entorno virtual
    
     flask --app prediction_service.py run --port=5002 --debug
 
-3) Instalación y despliegue de ambiente para log_service
+
+# Instalación y despliegue de ambiente para log_service
 
     python3 -m venv .venv
     . .venv/bin/activate
     flask --app log_service.py run --port=5003 --debug
 
 
-4) Instalación y despliegue de ambiente para user_service
+# Instalación y despliegue de ambiente para user_service
 
     python3 -m venv .venv
 
-    . .venvj/bin/activate
+    . .venv/bin/activate
 
     pip install requests_cache
 
@@ -53,13 +54,13 @@ Instalación del entorno virtual
 
 
 
-Instalación de docker-compose
+# Instalación de docker-compose
 
     apt install docker-compose
 
 
-Despliegue de contenedor Mongodb
+# Despliegue de contenedor Mongodb
 
     cd /carpeta contenedora del archivo docker-compose.yml
-    
+
     docker-compose up -d
