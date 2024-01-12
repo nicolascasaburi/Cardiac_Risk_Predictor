@@ -38,7 +38,7 @@ def create_app(test_config=None):
         param = np.array([[nivel_colesterol, presion_arterial, azucar, edad, sobrepeso, tabaquismo]]).astype("float32")
         
         # Se obtiene el scaler
-        with open('../machine_learning/model.pkl', 'rb') as scaler_file:
+        with open('../machine_learning/scaler.pkl', 'rb') as scaler_file:
             scaler = pickle.load(scaler_file)
 
         # Se normalizan los datos
