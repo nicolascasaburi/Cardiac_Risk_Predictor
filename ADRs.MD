@@ -12,11 +12,11 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
 2. **Lenguaje de Programación:**
    - Se decide utilizar Python para la implementación de la aplicación y servicios, dada su eficiencia en procesamiento de datos y amplio soporte para bibliotecas de machine learning.
 
-3. **Framework de Aplicación Machine Learning:**
-   - Flask se selecciona como el framework para la aplicación machine_learning debido a su simplicidad y capacidad para integrarse fácilmente con otras tecnologías.
+3. **Framework para los microservicios:**
+   - Flask se selecciona como el framework para los microservicios debido a su simplicidad y capacidad para integrarse fácilmente con otras tecnologías.
 
 4. **Contenedorización:**
-   - Se utiliza Docker para contener y distribuir la aplicación machine_learning y los microservicios, garantizando la consistencia del entorno de ejecución.
+   - Se utiliza Docker para contener y distribuir la aplicación machine_learning, los microservicios y la base de datos mongo, garantizando la consistencia del entorno de ejecución.
 
 5. **Base de Datos:**
    - MongoDB es la base de datos seleccionada para almacenar información relacionada con usuarios y bitácora, debido a su flexibilidad y escalabilidad.
@@ -39,10 +39,10 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
 ## ADR: Aplicación machine_learning
 
 1. **Tecnologías:**
-   - Se utiliza Flask para el desarrollo de la aplicación machine_learning debido a su ligereza y facilidad de integración con otros componentes.
+   - Se utiliza Python para el desarrollo de la aplicación machine_learning debido a su ligereza y facilidad de integración con otros componentes.
 
 2. **Interfaz de Usuario:**
-   - La aplicación machine_learning no tiene una interfaz de usuario directa; se comunica con otros microservicios mediante solicitudes HTTP.
+   - La aplicación machine_learning no tiene una interfaz de usuario directa; genera un archivo modelo que es utilizado por el microservicio prediction_service, el cual es accedido mediante solicitudes HTTP.
 
 3. **Modelo de Red Neuronal:**
    - Se elige un modelo secuencial para la red neuronal, el cual es entrenado con datos clínicos para clasificar el riesgo cardíaco.
