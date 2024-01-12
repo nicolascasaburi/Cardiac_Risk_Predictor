@@ -2,6 +2,7 @@ import requests
 import json
 import time
 
+
 # TEST DEL microservicio authentication_service
 # URL del microservicio user_service
 url_microservicio = "http://127.0.0.1:5001/authentication_service"
