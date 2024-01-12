@@ -94,10 +94,10 @@ for i, dato in enumerate(datos, start=1):
     print(f"Solicitud POST enviada para el dato: {dato}")
     print(f"Respuesta del microservicio: {respuesta.text}")
     print("=" * 50)
-  # Agregar un retardo de 50 segundos después del llamado número 6
+  # Agregar un retardo de 59 segundos después del llamado número 6
     if i == 6:
-        print("Esperando 50 segundos...")
-        time.sleep(50)
+        print("Esperando 59 segundos...")
+        time.sleep(59)
 
 print("Todas las solicitudes POST han sido enviadas.")
 
@@ -127,7 +127,7 @@ for i, dato in enumerate(datos, start=1):
     print("=" * 50)
   # Agregar un retardo de 50 segundos después del llamado númeroro 51
     if i == 51:
-        print("Esperando 50 segundos...")
-        time.sleep(50)
+        print("Esperando 59 segundos...")
+        time.sleep(59)
 
 print("Todas las solicitudes POST han sido enviadas.")
