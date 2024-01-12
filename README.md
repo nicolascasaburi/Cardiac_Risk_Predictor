@@ -1,6 +1,6 @@
 # Instalación del entorno virtual necesario
 
-# Instalación y despliegue de ambiente para authentication_service
+## Instalación y despliegue de ambiente para authentication_service
 
     python3 -m venv .venv
 
@@ -16,7 +16,7 @@
    
 
 
-# Instalación y despliegue de ambiente para prediction_service
+## Instalación y despliegue de ambiente para prediction_service
    
     python3 -m venv .venv
    
@@ -35,14 +35,14 @@
     flask --app prediction_service.py run --port=5002 --debug
 
 
-# Instalación y despliegue de ambiente para log_service
+## Instalación y despliegue de ambiente para log_service
 
     python3 -m venv .venv
     . .venv/bin/activate
     flask --app log_service.py run --port=5003 --debug
 
 
-# Instalación y despliegue de ambiente para user_service
+## Instalación y despliegue de ambiente para user_service
 
     python3 -m venv .venv
 
@@ -54,12 +54,12 @@
 
 
 
-# Instalación de docker-compose
+## Instalación de docker-compose
 
     apt install docker-compose
 
 
-# Despliegue de contenedor Mongodb
+## Despliegue de contenedor Mongodb
 
     cd /carpeta contenedora del archivo docker-compose.yml
 
