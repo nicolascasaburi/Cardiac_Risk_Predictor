@@ -2,6 +2,48 @@ import requests
 import json
 import time
 
+# TEST DEL microservicio authentication_service
+# URL del microservicio user_service
+url_microservicio = "http://127.0.0.1:5001/authentication_service"
+
+# Test con un usuario Premium
+headers = {
+            'Authorization': '7803f9b4f94ab605f48087da2c2a1627',
+            'Content-Type': 'application/json',
+        }
+
+respuesta = requests.post(url_microservicio, headers=headers)
+print("=" * 50)
+print("Test de llamados al microservicio authentication_service para un usuario Premium")
+print(f"Respuesta del microservicio: {respuesta.text}")
+print("=" * 50)
+
+# Test con un usuario Freemium
+headers = {
+            'Authorization': '741f24cf76d772b15dcdd896d6044812',
+            'Content-Type': 'application/json',
+        }
+
+respuesta = requests.post(url_microservicio, headers=headers)
+print("=" * 50)
+print("Test de llamados al microservicio authentication_service para un usuario Freemium")
+print(f"Respuesta del microservicio: {respuesta.text}")
+print("=" * 50)
+
+# Test con un usuario no registrado
+headers = {
+            'Authorization': '741f24cf76d772b15dcdd896d6044812yyy',
+            'Content-Type': 'application/json',
+        }
+
+respuesta = requests.post(url_microservicio, headers=headers)
+print("=" * 50)
+print("Test de llamados al microservicio authentication_service para un usuario no registrado")
+print(f"Respuesta del microservicio: {respuesta.text}")
+print("=" * 50)
+
+
+# TEST DEL microservicio user_service
 # URL del microservicio user_service
 url_microservicio = "http://127.0.0.1:5000/user_service"
 
