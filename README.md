@@ -64,3 +64,12 @@
     cd /carpeta contenedora del archivo docker-compose.yml
 
     docker-compose up -d
+
+# Playground
+
+Corriendo la aplicación Playground.py se pueden testear los microservicios:
+
+    authentication_service
+    prediction_service
+    log_service
+    user_service
