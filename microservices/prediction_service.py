@@ -47,10 +47,8 @@ def create_app(test_config=None):
         # Se realiza la predicción
         resultado = model.predict(scaled_param,verbose = 0)
 
-        if float(resultado) <= 0.33:
+        if float(resultado) < 0.50:
             riesgo_cardiaco = "BAJO"
-        elif float(resultado) > 0.33 and float(resultado) <= 0.66:
-            riesgo_cardiaco = "MEDIO"
         else:
             riesgo_cardiaco = "ALTO"
 
