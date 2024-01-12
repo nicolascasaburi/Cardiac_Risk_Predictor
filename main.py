@@ -10,23 +10,10 @@ log_service_port = 5003
 #######################################
 
 def main():
-    """Menú interactivo"""
-
-    while(True):
-        print("\nElija una opción y precione enter:")
-        option = input("1 - Cargar la Base de Datos MongoDB con los datos\n2 - Levantar los servicios\n3 - Bajar los servicios\n4 - Salir\nrespuesta [1,2,3,4]:")
-        print("\n")
-        match option:
-            case "1": 
-                cargar_db()
-            case "2":
-                levantar_servicios()
-            case "3":
-                bajar_servicios()
-            case "4":
-                break
-            case _:
-                print("debe elegir una opción entre 1 y 4")
+    """Inicio de la aplicación"""
+    
+    cargar_db
+    levantar_servicios()
 
 def cargar_db():
     """Carga la Base de Datos de MongoDB con los datos"""
@@ -64,12 +51,6 @@ def levantar_servicios():
 
     # Servicio User
     command = "cd microservices; . .venv/bin/activate; flask --app 'user_service:create_app("+str(authentication_service_port)+","+str(prediction_service_port)+","+str(log_service_port)+")' run --port "+str(user_service_port)+" &"
-    os.system(command)
-
-def bajar_servicios():
-    """Baja todos los servicios"""
-
-    command = "killall flask"
     os.system(command)
 
 main()
