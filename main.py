@@ -1,24 +1,9 @@
 import os
 
-####### PUERTOS #######################
-
-user_service_port = 5000
-authentication_service_port = 5001
-prediction_service_port = 5002
-log_service_port = 5003
-
-#######################################
-
 def main():
     """Menú interactivo"""
     
     print("*** EVALUACION DE RIESGO CARDIACO ***")
-    print("\nLos puertos que se van a utilizar son:")
-    print("+ user_service: "+str(user_service_port))
-    print("+ authentication_service: "+str(authentication_service_port))
-    print("+ prediction_service: "+str(prediction_service_port))
-    print("+ log_service: "+str(log_service_port))
-    print("--- Recuerde que los puertos se pueden cambiar en el archivo "+os.path.basename(__file__)+" --- ")
 
     while(True):
         print("\nElija una opción y precione enter:")
@@ -56,19 +41,19 @@ def levantar_servicios():
     """Levanta todos los servicios con los puertos definidos"""
 
     # Servicio Authentication
-    command = "cd microservices; . .venv/bin/activate; flask --app authentication_service.py run --port "+str(authentication_service_port)+" &"
+    command = "cd microservices; . .venv/bin/activate; flask --app authentication_service.py run --port 5001 &"
     os.system(command)
 
     # Servicio Prediction
-    command = "cd microservices; . .venv/bin/activate; flask --app prediction_service.py run --port "+str(prediction_service_port)+" &"
+    command = "cd microservices; . .venv/bin/activate; flask --app prediction_service.py run --port 5002 &"
     os.system(command)
 
     # Servicio Log
-    command = "cd microservices; . .venv/bin/activate; flask --app log_service.py run --port "+str(log_service_port)+" &"
+    command = "cd microservices; . .venv/bin/activate; flask --app log_service.py run --port 5003 &"
     os.system(command)
 
     # Servicio User
-    command = "cd microservices; . .venv/bin/activate; flask --app 'user_service:create_app("+str(authentication_service_port)+","+str(prediction_service_port)+","+str(log_service_port)+")' run --port "+str(user_service_port)+" &"
+    command = "cd microservices; . .venv/bin/activate; flask --app 'user_service:create_app(5001,5002,5003)' run --port 5000 &"
     os.system(command)
 
 def bajar_servicios():
