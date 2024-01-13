@@ -16,7 +16,7 @@ Se requiere desarrollar un servicio web (API) que exponga un modelo de red neuro
    - Flask se selecciona como el framework para los microservicios debido a su simplicidad y capacidad para integrarse fácilmente con otras tecnologías.
 
 4. **Contenedorización:**
-   - Se utiliza Docker para contener y distribuir la aplicación machine_learning, los microservicios y la base de datos mongo, garantizando la consistencia del entorno de ejecución.
+   - Se utiliza Docker para contener y distribuir los microservicios y la base de datos mongo, garantizando la consistencia del entorno de ejecución.
 
 5. **Base de Datos:**
    - MongoDB es la base de datos seleccionada para almacenar información relacionada con usuarios y bitácora, debido a su flexibilidad y escalabilidad.
