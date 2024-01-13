@@ -1,3 +1,7 @@
+# Tópicos de Ingeniería de Software II - 2023
+
+    Casaburi, Nicolas - Casco, Julio
+
 # Instalación del entorno virtual necesario
 
 ## Instalación y despliegue de ambiente para authentication_service
@@ -82,9 +86,9 @@ Corriendo la aplicación Playground.py se pueden testear los microservicios:
 Existen dos aplicaciones que permiten generar objetos de tipo JSON
 
     generadorJSON.py: genera el archivo datos_generados.json utilizado para testear los microservicios user_service y prediction_service.
-    
+
     generador_log_JSON.py: genera el archivo datos_generados_log.json utilizado para testear el microservicio log_service.
 
 # Main
 
-Aplicación que permite ingestar usuarios en la base de datos mongo, levantar y bajar los microservicios.
+Aplicación que permite ingestar usuarios en la base de datos mongo y desplegar los microservicios.
