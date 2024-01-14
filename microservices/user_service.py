@@ -17,16 +17,16 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
         """Microservicio que interactua con el usuario"""
         
         # Se inicializa la cache
-        session = CachedSession('cache_modelo', backend='sqlite')
-        session.cache.clear()
         session = CachedSession('cache_modelo', backend='sqlite', expire_after=300) # la cache expira luego de 300 segundos
-        
-        fecha = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
+        session.cache.clear()
+
+        fecha = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f') # se convierte el datetime en string para guardarlo en formate json
         start_counter = time.time()
         text = []
 
         # Se obtiene la API Key Authorization
         key = request.headers.get('Authorization')
+
         # Se obtienen los datos de entrada en formato JSON
         datos_json = request.get_json()
         nivel_colesterol = datos_json.get('nivel_colesterol')
@@ -51,9 +51,12 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
             printer(message)
             abort(response.status_code, description = message)
       
+        # Se le da formato al resultado de la predicción
         resultados = response.json()
         text.append("RESULTADO: " + str(float(resultados[0])))
         text.append("RIESGO CARDIACO: " + resultados[1])
+        
+        # Se detiene el contador y se calcula el tiempo de procesamiento
         stop_counter = time.time()
         tiempo_procesamiento = str(stop_counter - start_counter)
         text.append("TIEMPO DE PROCESAMIENTO: " + tiempo_procesamiento + " seg")
@@ -82,7 +85,7 @@ def printer(message):
     return jsonify(message)
 
 def get_custom_response(response) -> str:
-    """Obtiene el custom response desde una respuesta html"""
+    """Obtiene el custom response desde un html"""
 
     soup = BeautifulSoup(response.content, 'html.parser')
     custom_response= soup.find('p').text
