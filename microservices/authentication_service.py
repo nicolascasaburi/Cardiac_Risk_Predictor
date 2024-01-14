@@ -1,13 +1,9 @@
 import pymongo
 from datetime import datetime, timedelta
-import time
 from flask import (
     Flask,
     request,
-    Response,
     abort,
-    jsonify,
-    current_app,
     g
 )  # se importa la librería principal de flask
 
@@ -15,22 +11,24 @@ def create_app(test_config=None):
     
     app = Flask(__name__, instance_relative_config=True)
     @app.route('/authentication_service',methods = ['POST'])
-    def authentication_request():
+    def authentication_service():
         """Microservicio que autoriza al usuario"""
 
         key = request.headers.get('Authorization')
-        error = ''
 
+        if not key:
+            abort(400, "Falta el header Authorization con la API key")
+        
         # Validación de usuario autorizado
         tipo = usuario_registrado(key)
         if not tipo:
-            error = 'El usuario no está registrado'
+            abort(403, "El usuario no esta registrado")
         
         # Validación de la cantidad de solicitudes por minuto
         if alcanzo_maximo(key,tipo):
-            error = 'El usuario con cuenta '+tipo+' alcanzó el máximo de solicitudes por minuto'
+            abort(429, "El usuario alcanzo el maximo de solicitudes por minuto")
 
-        return [error]
+        return ["El usuario está autorizado"]
     return app
 
 def get_db():
