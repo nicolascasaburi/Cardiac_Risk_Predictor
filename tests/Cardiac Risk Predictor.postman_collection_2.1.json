@@ -1,0 +1,3768 @@
+{
+	"info": {
+		"_postman_id": "d8b75054-a80d-420f-94ea-2fa02fb1e8c5",
+		"name": "Cardiac Risk Predictor - Postman Tests",
+		"description": "This collection has a mix of HTTP requests in order to test the app Cardiac Risk Predictor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32062915"
+	},
+	"item": [
+		{
+			"name": "Reach limit of requests for a Fremium Account",
+			"item": [
+				{
+					"name": "Request 1 - Freemium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "741f24cf76d772b15dcdd896d6044812",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2 - Freemium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "741f24cf76d772b15dcdd896d6044812",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3 - Freemium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "741f24cf76d772b15dcdd896d6044812",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 4 - Freemium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "741f24cf76d772b15dcdd896d6044812",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 5 - Freemium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "741f24cf76d772b15dcdd896d6044812",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 6 - Freemium Account (with response validation)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The user has reached the max number of requests allowed per minute\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "741f24cf76d772b15dcdd896d6044812",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection executes 6 requests using a freemium account in order to reach the limit for freemium accounts, which is 5 request per minute. The last request validates the body response, expecting the string \"The user has reached the max number of requests allowed per minute\".\n<br>\nThe freemium account used is:\nKey = 741f24cf76d772b15dcdd896d6044812"
+		},
+		{
+			"name": "Reach limit of requests for a Premium Account",
+			"item": [
+				{
+					"name": "Request 1 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 4 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 5 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 6 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 7 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 8 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 9 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 10 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 11 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 12 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 13 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 14 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 15 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 16 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 17 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 18 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 19 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 20 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 21 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 22 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 23 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 24 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 25 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 26 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 27 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 28 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 29 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 30 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 31 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 32 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 33 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 34 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 35 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 36 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 37 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 38 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 39 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 40 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 41 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 42 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 43 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 44 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 45 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 46 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 47 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 48 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 49 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 50 - Premium Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 51 - Premium Account (with response validation)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The user has reached the max number of requests allowed per minute\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "7803f9b4f94ab605f48087da2c2a1627",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection executes 51 requests using a premium account in order to reach the limit for premium accounts, which is 50 request per minute. The last request validates the body response, expecting the string \"The user has reached the max number of requests allowed per minute\".\n<br>\nThe premium account used is:\nKey = 7803f9b4f94ab605f48087da2c2a1627"
+		},
+		{
+			"name": "Test missing parameters",
+			"item": [
+				{
+					"name": "Request 1 - header validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Authorization header with API key is missing\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2 - colesterol_level validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: colesterol_level \");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3 - blood_presure validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: blood_presure \");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 4 - blood_sugar validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: blood_sugar \");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 5 - age validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: age \");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 6 - overweight validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: overweight \");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"5\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 7 - smoking validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: smoking \");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"5\",\n \"overweight\": \"1\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection checks that the validations for missing parameters are working properly.\n<br>\nThe premium account used in this collection is:  \nKey: 61ca6ffc6b94545a58a75ce0637ebf36"
+		},
+		{
+			"name": "Test not authorized account",
+			"item": [
+				{
+					"name": "Request 1 - Not authorized account validation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The user is not registered\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "f0541dc5c60aedbf38d31c38eb07d5e7",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection checks whether the validation for invalid accounts is working properly.\n<br>\nThe invalid account used in this collection is:  \nKey: f0541dc5c60aedbf38d31c38eb07d5e7 (not registered account)"
+		},
+		{
+			"name": "Test out of range parameters",
+			"item": [
+				{
+					"name": "Request 1 - colesterol_level out of range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"colesterol_level must be between 1.0 and 3.0\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2 - blood_presure out of range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"blood_presure must be between 0.6 and 1.8\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.2\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3 - blood_sugar out of range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"blood_sugar must be between 0.5 y 2.0\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"3\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 4 - age out of range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"age must be between 0 and 99\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"135\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 5 - overweight out of range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"overweight must be either 0 or 1\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"2\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 6 - smoking out of range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"smoking must be either 0 or 1\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"2\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/gateway_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"gateway_service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection checks whether the out of range validations are working properly.\n<br>\nThe premium account used in this collection is:  \nKey: 61ca6ffc6b94545a58a75ce0637ebf36"
+		},
+		{
+			"name": "Test services individually",
+			"item": [
+				{
+					"name": "Request 1 - authentication_service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The user is authorized\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5001/authentication_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5001",
+							"path": [
+								"authentication_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2 - prediction_service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5002/prediction_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5002",
+							"path": [
+								"prediction_service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3 - log_service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"The request has been stored in the database successfully\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "61ca6ffc6b94545a58a75ce0637ebf36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"key\": \"61ca6ffc6b94545a58a75ce0637ebf36\",\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"1.2\",\n \"blood_sugar\": \"1\",\n \"age\": \"53\",\n \"overweight\": \"1\",\n \"smoking\": \"0\",\n \"result\": \"0.0073930383659899235\",\n \"cardiac_risk_index\":\"LOW\",\n \"processing_time\": \"0.2075958251953125\",\n \"date\": \"2024-01-14 17:15:45.223119\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5003/log_service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5003",
+							"path": [
+								"log_service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection sends requests to each service whitout calling the gateway in order to test whether they can run individually.  \n<br>\nThe premium account used in this collection is:  \nKey: 61ca6ffc6b94545a58a75ce0637ebf36"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
