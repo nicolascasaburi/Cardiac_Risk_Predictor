@@ -15,3 +15,7 @@ venv.bak/
 venvj.bak/
 /microservices/.venvj/
 /microservices/.venv/
+/microservices/gateway_service/.venv/
+/microservices/authentication_service/.venv/
+/microservices/log_service/.venv/
+/microservices/prediction_service/.venv/
