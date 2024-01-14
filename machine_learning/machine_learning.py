@@ -2,80 +2,79 @@
 # coding: utf-8
 
 # Imports
-import numpy as np #Manejar los arreglos con los datos
-import pandas as pd #Tomar el dataset y convertir datos categoricos
-import matplotlib.pyplot as plt #Para graficar
-import pickle
-import tensorflow as tf
-from tensorflow.keras import models #Crear/entrenar/evaluar el modelo
-from tensorflow.keras.layers import Dense, Dropout #Capas densas para la red
-from tensorflow.keras.optimizers import Adam #Optimizador a utilizar
-from sklearn.model_selection import train_test_split #Para separar train de test
-from sklearn.preprocessing import MinMaxScaler #Para normalizar los datos
+import numpy as np #library to add support for large and multidimensional arryas
+import pandas as pd #library for data manipulation, used to convert dataset into categories
+import matplotlib.pyplot as plt #useful for elaborating graphs
+import pickle #this is used for serializing the Scaler into a file
+import tensorflow as tf 
+from tensorflow.keras import models #create, train and evaluate a model
+from tensorflow.keras.layers import Dense, Dropout #Dense layers
+from tensorflow.keras.optimizers import Adam #Optimizer
+from sklearn.model_selection import train_test_split #this is used for splitting the trainging data and the test data
+from sklearn.preprocessing import MinMaxScaler #this is used for normalizing the data
 
-# Creación del modelo
+# Model creation
 model = models.Sequential()
 
-# Se agregan las capas
+# The layers are added into the model
 model.add(Dense(50, input_dim=6, activation="relu", kernel_initializer="uniform"))
 model.add(Dense(30, activation="relu", kernel_initializer='random_normal'))
 model.add(Dense(40, activation="relu", kernel_initializer='random_normal'))
 model.add(Dense(1, activation='sigmoid'))
 
-# Se compila el modelo
+# Model compilation
 model.compile(loss='binary_crossentropy', optimizer=Adam(learning_rate=0.01))
 model.summary()
 
-# Se carga el dataset
+# Loading the dataset
 data = pd.read_csv("datos/datos_de_pacientes.csv")
-#data=data.astype(np.float32)
 
-# Se separan los datos de entrada X y los datos de salida Y
+# The input data and output data are segregated
 X = data.drop(["riesgo_cardiaco"], axis=1)
 Y = np.array(data["riesgo_cardiaco"])
 
-# Se quita la primer columna (enumerador)
+# The first column (enumerator) is removed
 X = np.array(X.drop(data.columns[0], axis=1))
 
-# Se separan los datos en training y testing
+# The training data and test data are segregated
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size= 0.2)
 
-# Se normalizan los datos de entrenamiento y luego los datos de test
+# The training data is normalized as well as the test data
 scaler = MinMaxScaler()
 scaled_X_train = scaler.fit_transform(X_train)
 scaled_X_train = pd.DataFrame(scaled_X_train)
 scaled_X_test = scaler.fit_transform(X_test)
 scaled_X_test = pd.DataFrame(scaled_X_test)
 
-# Se entrena la red
+# Training the model
 X_train = np.asarray(scaled_X_train).astype(np.float32)
 Y_train = np.asarray(Y_train).astype(np.float32)
 historial = model.fit(scaled_X_train,Y_train,epochs=20,batch_size=40)
 
-# Se calcula el error
-print("----- Cálculo de Loss -----")
+# Error calculation
+print("----- Loss calculation -----")
 test_loss = model.evaluate(scaled_X_test, Y_test)
 print(test_loss)
 
-# Se grafica el loss a lo largo de las epocas
-plt.xlabel("Número de época")
-plt.ylabel("Pérdida/Loss")
+# Graphing the loss over the epochs
+plt.xlabel("Epoch number")
+plt.ylabel("Loss")
 plt.plot(historial.history["loss"])
 
-# Se predicen los primeros 3 elementos de entrenamiento
-print("----- Predicción de los primeros 3 elementos -----")
-print("Datos a predecir:")
+# Prediction of the first 3 elements
+print("----- Prediction of the first 3 elements -----")
+print("Data to predict:")
 print(X_train[:3])
 result = model.predict(scaled_X_train[:3])
-print("Resultados obtenidos:")
+print("Results:")
 print(result)
-print("Valores correctos:")
+print("Correct values:")
 print(Y_train[:3])
 
-# Se guarda el scaler
-scaler_pkl_file = "scaler.pkl"  
+# The scaler is saved in a file
+scaler_pkl_file = "../microservices/prediction_service/scaler.pkl"  
 with open(scaler_pkl_file, 'wb') as file:  
     pickle.dump(scaler, file)
 
-# Se guarda el modelo
-model.save("model.keras")
+# The model is saved in a file
+model.save("../microservices/prediction_service/model.keras")
