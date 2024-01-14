@@ -9,17 +9,23 @@ log_service_port = 5003
 
 #######################################
 
+#################### CONEXION A LA BD ########################
+
+db_connection_string = "mongodb://mongoadmin:secret@localhost"
+
+##############################################################
+
 def main():
     """Inicio de la aplicación"""
     
-    cargar_db
+    cargar_db()
     levantar_servicios()
 
 def cargar_db():
-    """Carga la Base de Datos de MongoDB con los datos"""
+    """Carga la Base de Datos de MongoDB con los usuarios"""
   
     import pymongo
-    dbClient = pymongo.MongoClient('mongodb://mongoadmin:secret@localhost')
+    dbClient = pymongo.MongoClient(db_connection_string)
     db = dbClient['riesgo_cardiaco']
     usuarios = [
     {'key': '741f24cf76d772b15dcdd896d6044812', 'tipo': 'freemium'},
@@ -38,7 +44,7 @@ def levantar_servicios():
     """Levanta todos los servicios con los puertos definidos"""
 
     # Servicio Authentication
-    command = "cd microservices; . .venv/bin/activate; flask --app authentication_service.py run --port "+str(authentication_service_port)+" &"
+    command = "cd microservices; . .venv/bin/activate; flask --app 'authentication_service:create_app(\""+db_connection_string+"\")' run --port "+str(authentication_service_port)+" &"
     os.system(command)
 
     # Servicio Prediction
@@ -46,7 +52,7 @@ def levantar_servicios():
     os.system(command)
 
     # Servicio Log
-    command = "cd microservices; . .venv/bin/activate; flask --app log_service.py run --port "+str(log_service_port)+" &"
+    command = "cd microservices; . .venv/bin/activate; flask --app 'log_service:create_app(\""+db_connection_string+"\")' run --port "+str(log_service_port)+" &"
     os.system(command)
 
     # Servicio User
