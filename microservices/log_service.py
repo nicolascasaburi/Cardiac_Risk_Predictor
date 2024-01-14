@@ -1,6 +1,7 @@
 import pymongo
 import datetime
 import time
+import os
 from flask import (
     Flask,
     request,
@@ -8,8 +9,8 @@ from flask import (
     g
 )  # se importa la librería principal de flask
 
-def create_app(test_config=None):
-    
+def create_app(db_connection_string,test_config=None):
+
     app = Flask(__name__, instance_relative_config=True)
     @app.route('/log_service',methods = ['POST'])
     def log_service():
@@ -34,29 +35,29 @@ def create_app(test_config=None):
             abort(404, error)
 
         # Se guarda en la bitacora
-        error = logueo(key,nivel_colesterol,presion_arterial,azucar,edad,sobrepeso,tabaquismo,str(float(resultado)),riesgo_cardiaco,fecha,tiempo_procesamiento)
+        error = logueo(db_connection_string,key,nivel_colesterol,presion_arterial,azucar,edad,sobrepeso,tabaquismo,str(float(resultado)),riesgo_cardiaco,fecha,tiempo_procesamiento)
         if error != '':
             abort(502, error)
 
         return "La solicitud se registró correctamente en la bitacora"
     return app
 
-def get_db():
+def get_db(db_connection_string):
     """Se establece la conexión a la base de datos"""
     
     if 'db' not in g:
-        dbClient = pymongo.MongoClient('mongodb://mongoadmin:secret@localhost')
+        dbClient = pymongo.MongoClient(db_connection_string)
         db = dbClient['riesgo_cardiaco']
         coll = db['bitacora']
         g.db= coll
     return g.db
 
-def logueo(key:str, nivel_colesterol:str, presion_arterial:str, azucar:str, edad:str, sobrepeso:str, tabaquismo:str, resultado:str, riesgo_cardiaco:str, fecha:datetime, tiempo_procesamiento:time):
+def logueo(db_connection_string:str, key:str, nivel_colesterol:str, presion_arterial:str, azucar:str, edad:str, sobrepeso:str, tabaquismo:str, resultado:str, riesgo_cardiaco:str, fecha:datetime, tiempo_procesamiento:time):
     """Loguea una solicitud en la bitacora"""
 
     record = { "key" : key, "nivel_colesterol" : nivel_colesterol, "presion_arterial" : presion_arterial, "azucar" : azucar, "edad" : edad, "sobrepeso" : sobrepeso, "tabaquismo" : tabaquismo, "resultado" : resultado, "riesgo_cardiaco" : riesgo_cardiaco, "fecha" : fecha, "tiempo_procesamiento" : tiempo_procesamiento }
     try:
-        get_db().insert_one(record)
+        get_db(db_connection_string).insert_one(record)
     except Exception as e:
         return("Error al loguear en la bitacora:", e)
     
