@@ -7,7 +7,7 @@ from flask import (
     g
 )  # se importa la librería principal de flask
 
-def create_app(test_config=None):
+def create_app(db_connection_string,test_config=None):
     
     app = Flask(__name__, instance_relative_config=True)
     @app.route('/authentication_service',methods = ['POST'])
@@ -20,36 +20,36 @@ def create_app(test_config=None):
             abort(400, "Falta el header Authorization con la API key")
         
         # Validación de usuario autorizado
-        tipo = usuario_registrado(key)
+        tipo = usuario_registrado(db_connection_string,key)
         if not tipo:
             abort(403, "El usuario no esta registrado")
         
         # Validación de la cantidad de solicitudes por minuto
-        if alcanzo_maximo(key,tipo):
+        if alcanzo_maximo(db_connection_string,key,tipo):
             abort(429, "El usuario alcanzo el maximo de solicitudes por minuto")
 
         return ["El usuario está autorizado"]
     return app
 
-def get_db():
+def get_db(db_connection_string:str):
     """Se establece la conexión a la base de datos"""
     
     if 'db' not in g:
-        dbClient = pymongo.MongoClient('mongodb://mongoadmin:secret@localhost')
+        dbClient = pymongo.MongoClient(db_connection_string)
         db = dbClient['riesgo_cardiaco']
         g.db= db
     return g.db
 
-def usuario_registrado(hash:str):
+def usuario_registrado(db_connection_string:str,hash:str):
     """Contrasta la key ingresada contra la BD"""
     
-    result = get_db()['usuarios'].find_one({'key': hash})
+    result = get_db(db_connection_string)['usuarios'].find_one({'key': hash})
     if result:
         return result["tipo"]
     else:
         return False
     
-def alcanzo_maximo(key:str, tipo:str):
+def alcanzo_maximo(db_connection_string:str, key:str, tipo:str):
     "Verifica que el usuario no exceda la cantidad máxima de solicitudes por minuto"
     
     if tipo == "freemium":
@@ -59,7 +59,7 @@ def alcanzo_maximo(key:str, tipo:str):
     
     one_minute_ago = datetime.now() - timedelta(minutes=1)
     query = {"$and":[{"key": key},{"fecha": {"$gte": str(one_minute_ago)}}]}
-    solicitudes = get_db()['bitacora'].count_documents(query)    
+    solicitudes = get_db(db_connection_string)['bitacora'].count_documents(query)    
     if solicitudes >= maximo:
         return True
     return False
