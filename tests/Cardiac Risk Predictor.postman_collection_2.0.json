@@ -36,7 +36,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1\",\n \"blood_pressure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -73,7 +73,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1\",\n \"blood_pressure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -110,7 +110,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1\",\n \"blood_pressure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -147,7 +147,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1\",\n \"blood_pressure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -184,7 +184,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1\",\n \"blood_pressure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -221,7 +221,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1\",\n \"blood_presure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1\",\n \"blood_pressure\": \"0.9\",\n \"blood_sugar\": \"1\",\n \"age\": \"5\",\n \"overweight\": \"0\",\n \"smoking\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -264,7 +264,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -301,7 +301,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -338,7 +338,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -375,7 +375,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -412,7 +412,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -449,7 +449,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -486,7 +486,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -523,7 +523,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -560,7 +560,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -597,7 +597,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -634,7 +634,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -671,7 +671,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -708,7 +708,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -745,7 +745,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -782,7 +782,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -819,7 +819,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -856,7 +856,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -893,7 +893,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -930,7 +930,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -967,7 +967,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1004,7 +1004,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1041,7 +1041,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1078,7 +1078,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1115,7 +1115,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1152,7 +1152,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1189,7 +1189,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1226,7 +1226,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1263,7 +1263,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1300,7 +1300,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1337,7 +1337,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1374,7 +1374,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1411,7 +1411,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1448,7 +1448,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1485,7 +1485,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1522,7 +1522,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1559,7 +1559,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1596,7 +1596,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1633,7 +1633,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1670,7 +1670,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1707,7 +1707,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1744,7 +1744,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1781,7 +1781,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1818,7 +1818,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1855,7 +1855,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1892,7 +1892,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1929,7 +1929,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1966,7 +1966,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2003,7 +2003,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2040,7 +2040,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2077,7 +2077,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2114,7 +2114,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2158,7 +2158,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2170,14 +2170,14 @@
 					"response": []
 				},
 				{
-					"name": "Request 2 - colesterol_level validation",
+					"name": "Request 2 - cholesterol_level validation",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
 									"pm.test(\"Body matches string\", function () {",
-									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: colesterol_level \");",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: cholesterol_level \");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -2195,7 +2195,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2207,14 +2207,14 @@
 					"response": []
 				},
 				{
-					"name": "Request 3 - blood_presure validation",
+					"name": "Request 3 - blood_pressure validation",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
 									"pm.test(\"Body matches string\", function () {",
-									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: blood_presure \");",
+									"    pm.expect(pm.response.text()).to.include(\"The following parameters are missing: blood_pressure \");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -2232,7 +2232,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2269,7 +2269,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2306,7 +2306,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2343,7 +2343,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"5\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"5\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2380,7 +2380,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"5\",\n \"overweight\": \"1\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"5\",\n \"overweight\": \"1\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2423,7 +2423,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2441,14 +2441,14 @@
 			"name": "Test out of range parameters",
 			"item": [
 				{
-					"name": "Request 1 - colesterol_level out of range",
+					"name": "Request 1 - cholesterol_level out of range",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
 									"pm.test(\"Body matches string\", function () {",
-									"    pm.expect(pm.response.text()).to.include(\"colesterol_level must be between 1.0 and 3.0\");",
+									"    pm.expect(pm.response.text()).to.include(\"cholesterol_level must be between 1.0 and 3.0\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -2466,7 +2466,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2478,14 +2478,14 @@
 					"response": []
 				},
 				{
-					"name": "Request 2 - blood_presure out of range",
+					"name": "Request 2 - blood_pressure out of range",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
 									"pm.test(\"Body matches string\", function () {",
-									"    pm.expect(pm.response.text()).to.include(\"blood_presure must be between 0.6 and 1.8\");",
+									"    pm.expect(pm.response.text()).to.include(\"blood_pressure must be between 0.6 and 1.8\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -2503,7 +2503,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.2\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.2\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2540,7 +2540,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"3\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"3\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2577,7 +2577,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"135\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"135\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2614,7 +2614,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"2\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"2\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2651,7 +2651,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"2\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"2\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2731,7 +2731,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
+							"raw": "{\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"0.7\",\n \"blood_sugar\": \"1.2\",\n \"age\": \"55\",\n \"overweight\": \"1\",\n \"smoking\": \"0\"\n}   ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2768,7 +2768,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"key\": \"61ca6ffc6b94545a58a75ce0637ebf36\",\n \"colesterol_level\": \"1.5\",\n \"blood_presure\": \"1.2\",\n \"blood_sugar\": \"1\",\n \"age\": \"53\",\n \"overweight\": \"1\",\n \"smoking\": \"0\",\n \"result\": \"0.0073930383659899235\",\n \"cardiac_risk_index\":\"LOW\",\n \"processing_time\": \"0.2075958251953125\",\n \"date\": \"2024-01-14 17:15:45.223119\"\n}",
+							"raw": "{\n \"key\": \"61ca6ffc6b94545a58a75ce0637ebf36\",\n \"cholesterol_level\": \"1.5\",\n \"blood_pressure\": \"1.2\",\n \"blood_sugar\": \"1\",\n \"age\": \"53\",\n \"overweight\": \"1\",\n \"smoking\": \"0\",\n \"result\": \"0.0073930383659899235\",\n \"cardiac_risk_index\":\"LOW\",\n \"processing_time\": \"0.2075958251953125\",\n \"date\": \"2024-01-14 17:15:45.223119\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"

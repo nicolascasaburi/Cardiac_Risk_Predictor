@@ -19,8 +19,8 @@ def create_app(db_connection_string,test_config=None):
         # Parameters are retrieved from JSON format
         json_data = request.get_json()
         key = json_data.get("key")
-        colesterol_level = json_data.get('colesterol_level')
-        blood_presure = json_data.get("blood_presure")
+        cholesterol_level = json_data.get('cholesterol_level')
+        blood_pressure = json_data.get("blood_pressure")
         blood_sugar = json_data.get("blood_sugar")
         age = json_data.get("age")
         overweight = json_data.get("overweight")
@@ -31,12 +31,12 @@ def create_app(db_connection_string,test_config=None):
         date = json_data.get("date")
 
         # Data validation
-        error = user_data_validation(key,colesterol_level,blood_presure,blood_sugar,age,overweight,smoking,result,cardiac_risk_index,processing_time,date)
+        error = user_data_validation(key,cholesterol_level,blood_pressure,blood_sugar,age,overweight,smoking,result,cardiac_risk_index,processing_time,date)
         if error != '':
             abort(404, error)
 
         # Logging into the bitacora
-        error = log(db_connection_string,key,colesterol_level,blood_presure,blood_sugar,age,overweight,smoking,str(float(result)),cardiac_risk_index,processing_time,date)
+        error = log(db_connection_string,key,cholesterol_level,blood_pressure,blood_sugar,age,overweight,smoking,str(float(result)),cardiac_risk_index,processing_time,date)
         if error != '':
             abort(502, error)
 
@@ -58,10 +58,10 @@ def get_db(db_connection_string):
             print(f"An error related to MongoDB has ocurred: {e}")
     return g.db
 
-def log(db_connection_string:str, key:str, colesterol_level:str, blood_presure:str, blood_sugar:str, age:str, overweight:str, smoking:str, result:str, cardiac_risk_index:str, proccesing_time:time, date:datetime):
+def log(db_connection_string:str, key:str, cholesterol_level:str, blood_pressure:str, blood_sugar:str, age:str, overweight:str, smoking:str, result:str, cardiac_risk_index:str, proccesing_time:time, date:datetime):
     """This functions logs the user request into the bitacora"""
 
-    record = { "key" : key, "colesterol_level" : colesterol_level, "blood_presure" : blood_presure, "blood_sugar" : blood_sugar, "age" : age, "overweight" : overweight, "smoking" : smoking, "result" : result, "cardiac_risk_index" : cardiac_risk_index, "proccesing_time" : proccesing_time, "date" : date }
+    record = { "key" : key, "cholesterol_level" : cholesterol_level, "blood_pressure" : blood_pressure, "blood_sugar" : blood_sugar, "age" : age, "overweight" : overweight, "smoking" : smoking, "result" : result, "cardiac_risk_index" : cardiac_risk_index, "proccesing_time" : proccesing_time, "date" : date }
     try:
         get_db(db_connection_string).insert_one(record)
     except Exception as e:
@@ -69,17 +69,17 @@ def log(db_connection_string:str, key:str, colesterol_level:str, blood_presure:s
     
     return ''
 
-def user_data_validation(key, colesterol_level, blood_presure, blood_sugar, age, overweight, smoking, result, cardiac_risk_index, processing_time, date):
+def user_data_validation(key, cholesterol_level, blood_pressure, blood_sugar, age, overweight, smoking, result, cardiac_risk_index, processing_time, date):
     """This function verifies that all user parameters exist"""
     error = ''
 
     # Parameter existence validations
     if key is None:
         error = error + 'key '
-    if colesterol_level is None:
-        error = error + 'colesterol_level '
-    if blood_presure is None:
-        error = error + 'blood_presure '
+    if cholesterol_level is None:
+        error = error + 'cholesterol_level '
+    if blood_pressure is None:
+        error = error + 'blood_pressure '
     if blood_sugar is None:
         error = error + 'blood_sugar '
     if age is None:
