@@ -4,8 +4,8 @@
     * Casco, Julio
 
 # About
-[!NOTE]
-This software is part of an academic subject, and shouldn't be used for real medical porpuses.
+> [!NOTE]
+> This software is part of an academic subject, and shouldn't be used for real medical porpuses.
 
 Cardiac Risk Predictor is an API developed in Python that predicts cardiac risk based on patient information such as blood pressure, cholesterol level, age, overweight, ect. The provided information is processed by a neural network, which has already been trained with thousands of data from patients records. The machine learning model used by this app was developed with Keras and Tensorflow in order to get an accurate cardiac risk prediction. In addition, this app makes use of a microservice architecture style that is compounded by 4 microservices:
 * gateway service: the gateway is in charge of the communication among services, working as a central point for managing and coordinating data. Besides, the gateway is the component which interacts with the user.
