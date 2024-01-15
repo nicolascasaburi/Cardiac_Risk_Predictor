@@ -45,24 +45,25 @@ Per default, the service ports are assigned as follows:
 The port assignation can be changed as your preference in the docker-compose.yml file.
 
 ## Run services manually
-Requirements: python3 and pip must be installed in your system before moving to the next step. Also, docker and docker-compose will be needed to run the mongo database.
+Requirements: python3, python3-venv and pip must be installed in your system before moving to the next step. Also, docker and docker-compose will be needed to run the mongo database.
 1. Cloning this repo
 ```git clone https://github.com/ncasaburi/Cardiac_Risk_Predictor.git```
-2. Create environment for gateway_service
-```python3 -m venv /microservices/gateway_service/.venv; python3 -m venv /microservices/authentication_service/.venv; python3 -m venv /microservices/prediction_service/.venv; python3 -m venv /microservices/log_service/.venv;```
-3. Access to the gateway environment and install the libraries
-```. /microservices/gateway_service/.venv/bin/activate; pip install -r /microservices/gateway_service/gateway_requirements.txt```
-4. Access to the authentication environment and install the libraries
-```. /microservices/authentication_service/.venv/bin/activate; pip install -r /microservices/authentication_service/authentication_requirements.txt```
-5. Access to the prediction environment and install the libraries
-```. /microservices/prediction_service/.venv/bin/activate; pip install -r /microservices/prediction_service/prediction_requirements.txt```
-6. Access to the log environment and install the libraries
-```. /microservices/log_service/.venv/bin/activate; pip install -r /microservices/log_service/log_requirements.txt```
-7. Move to docker/mongodb
+2. Move into the repo ```cd Cardiac_Risk_Predictor/```
+3. Create environment for gateway_service
+```python3 -m venv microservices/gateway_service/.venv; python3 -m venv microservices/authentication_service/.venv; python3 -m venv microservices/prediction_service/.venv; python3 -m venv microservices/log_service/.venv;```
+4. Access to the gateway environment and install the libraries
+```. microservices/gateway_service/.venv/bin/activate; pip install -r microservices/gateway_service/gateway_requirements.txt```
+5. Access to the authentication environment and install the libraries
+```. microservices/authentication_service/.venv/bin/activate; pip install -r microservices/authentication_service/authentication_requirements.txt```
+6. Access to the prediction environment and install the libraries
+```. microservices/prediction_service/.venv/bin/activate; pip install -r microservices/prediction_service/prediction_requirements.txt```
+7. Access to the log environment and install the libraries
+```. microservices/log_service/.venv/bin/activate; pip install -r microservices/log_service/log_requirements.txt```
+8. Move to docker/mongodb
 ```cd docker/mongodb```
-8. Run mongo database
+9. Run mongo database
 ```docker-compose up -d```
-9. Finally, we provide a python script that run all services and populates the database
+10. Finally, we provide a python script that run all services and populates the database
 ```cd  ../../; python3 main.py```
 
 The ip and port assignation as well as the database connection string can be changed as your preference in the main.py file.
