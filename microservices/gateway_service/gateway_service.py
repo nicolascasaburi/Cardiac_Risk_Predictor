@@ -10,7 +10,7 @@ from flask import (
 )  # import flask library
 from requests_cache import CachedSession # import library cache
 
-def create_app(authentication_service_port,prediction_service_port,log_service_port,test_config=None):
+def create_app(authentication_service_ip,authentication_service_port,prediction_service_ip,prediction_service_port,log_service_ip,log_service_port,test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     @app.route('/gateway_service',methods = ['POST'])
     def gateway_service():
@@ -37,7 +37,7 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
         smoking = json_data.get("smoking")         
 
         # User authentication
-        response = requests.post('http://localhost:'+str(authentication_service_port)+'/authentication_service', headers=request.headers)
+        response = requests.post('http://'+authentication_service_ip+':'+authentication_service_port+'/authentication_service', headers=request.headers)
         if response.status_code != 200:
             message = get_custom_response(response)
             printer(message)
@@ -45,7 +45,7 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
 
         # Cardiac Risk prediction
         data = {"colesterol_level" : colesterol_level, "blood_presure" : blood_presure, "blood_sugar" : blood_sugar, "age" : age, "overweight" : overweight, "smoking" : smoking}
-        response = session.post('http://localhost:'+str(prediction_service_port)+'/prediction_service', json=data)
+        response = session.post('http://'+prediction_service_ip+':'+prediction_service_port+'/prediction_service', json=data)
         if response.status_code != 200:
             message = get_custom_response(response)
             printer(message)
@@ -63,7 +63,7 @@ def create_app(authentication_service_port,prediction_service_port,log_service_p
       
         # Log the request into the bitacora
         data = {"key" : key, "colesterol_level" : colesterol_level, "blood_presure" : blood_presure, "blood_sugar" : blood_sugar, "age" : age, "overweight" : overweight, "smoking" : smoking, "result" : str(float(result[0])), "cardiac_risk_index" : result[1], "processing_time" : processing_time, "date" : date }
-        response = requests.post('http://localhost:'+str(log_service_port)+'/log_service', json=data)
+        response = requests.post('http://'+log_service_ip+':'+log_service_port+'/log_service', json=data)
         if response.status_code != 200:
             message = get_custom_response(response)
             printer(message)
