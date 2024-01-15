@@ -1,2 +1,4 @@
 flask
 requests_cache
+bs4
+pymongo
