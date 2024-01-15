@@ -41,6 +41,7 @@ Per default, the service ports are assigned as follows:
 * authentication service = 5001
 * prediction service = 5002
 * log service = 5003
+  
 The port assignation can be changed as your preference in the docker-compose.yml file.
 
 ## Run services manually
