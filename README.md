@@ -31,7 +31,7 @@ Requirements: docker and docker-compose must be installed in your system before 
 1. Cloning this repo
 ```git clone https://github.com/ncasaburi/Cardiac_Risk_Predictor.git```
 2. Move to the app folder whithin the repo
-```cd docker/app```
+```cd Cardiac_Risk_Predictor/docker/app```
 3. Download and run containers
 ```docker-compose up -d```
 
