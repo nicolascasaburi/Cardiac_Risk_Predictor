@@ -1,94 +1,80 @@
-# Tópicos de Ingeniería de Software II - 2023
+# Developers
 
-    Casaburi, Nicolas - Casco, Julio
+    * Casaburi, Nicolas
+    * Casco, Julio
 
-# Instalación del entorno virtual necesario
+# About
+[!NOTE]
+This software is part of an academic subject, and shouldn't be used for real medical porpuses.
 
-## Instalación y despliegue de ambiente para authentication_service
+Cardiac Risk Predictor is an API developed in Python that predicts cardiac risk based on patient information such as blood pressure, cholesterol level, age, overweight, ect. The provided information is processed by a neural network, which has already been trained with thousands of data from patients records. The machine learning model used by this app was developed with Keras and Tensorflow in order to get an accurate cardiac risk prediction. In addition, this app makes use of a microservice architecture style that is compounded by 4 microservices:
+* gateway service: the gateway is in charge of the communication among services, working as a central point for managing and coordinating data. Besides, the gateway is the component which interacts with the user.
+* authentication service: this service is responsible for verifying the identity of users attempting to access the application.
+* prediction service: this service performs the cardiac risk prediction based on the machine learning model.
+* log service: the log service registers all user request into the database.
+Moreover, a cache is implemented through the requests_cache library in order to speed up the prediction process, decreasing the server load and enhancing the user experience. In terms of persistent data, Cardiac Risk Predictor works with a local Mongo database to save information related to the patient requests. Finally, in order to access to the app, you will need an account key. There are 6 accounts available:
 
-    python3 -m venv .venv
+| Key | Account type | Requests per minute |
+| --- | --- | --- |
+| 741f24cf76d772b15dcdd896d6044812 | freemium | 5 |
+| 7803f9b4f94ab605f48087da2c2a1627| premium | 50 |
+| 2ed4bbc82dd29faeb4487092bdc535ed| freemium | 5 |
+| 61ca6ffc6b94545a58a75ce0637ebf36| premium | 50 |
+| 33d253c53e5739e7024a4f25abc81b22| freemium | 5 |
+| fb2f370aa9053ca5bb107d888180f94a| premium | 50 |
 
-    . .venv/bin/activate
-   
-    pip install flask
-   
-    python3 -m pip install "pymongo[svr]"
-   
-    pip install requests
-   
-    flask --app authentication_service.py run --port=5001 --debug
-   
+# Instalation options
 
+## Docker containers (recommended)
+This is the recommended option as containers have all required python libraries already installed.
+Requirements: docker and docker-compose must be installed in your system before moving to the next step.
+1. Cloning this repo
+```git clone https://github.com/ncasaburi/Cardiac_Risk_Predictor.git```
+2. Move to the app folder whithin the repo
+```cd docker/app```
+3. Download and run containers
+```docker-compose up -d```
 
-## Instalación y despliegue de ambiente para prediction_service
-   
-    python3 -m venv .venv
-   
-    . .venv/bin/activate
-   
-    export SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
-   
-    pip install sklearn
-   
-    pip install scikit-learn
-   
-    pip install pandas
-   
-    pip install tensorflow
-   
-    flask --app prediction_service.py run --port=5002 --debug
+The docker-compose.yml placed in the docker/app folder already contains all services required to run this app as well as the database.
+Per default, the service ports are assigned as follows:
+* gateway service = 5000
+* authentication service = 5001
+* prediction service = 5002
+* log service = 5003
+The port assignation can be changed as your preference in the docker-compose.yml file.
 
+## Run services manually
+Requirements: python3 and pip must be installed in your system before moving to the next step. Also, docker and docker-compose will be needed to run the mongo database.
+1. Cloning this repo
+```git clone https://github.com/ncasaburi/Cardiac_Risk_Predictor.git```
+2. Create environment for gateway_service
+```python3 -m venv /microservices/gateway_service/.venv; python3 -m venv /microservices/authentication_service/.venv; python3 -m venv /microservices/prediction_service/.venv; python3 -m venv /microservices/log_service/.venv;```
+3. Access to the gateway environment and install the libraries
+```. /microservices/gateway_service/.venv/bin/activate; pip install -r /microservices/gateway_service/gateway_requirements.txt```
+4. Access to the authentication environment and install the libraries
+```. /microservices/authentication_service/.venv/bin/activate; pip install -r /microservices/authentication_service/authentication_requirements.txt```
+5. Access to the prediction environment and install the libraries
+```. /microservices/prediction_service/.venv/bin/activate; pip install -r /microservices/prediction_service/prediction_requirements.txt```
+6. Access to the log environment and install the libraries
+```. /microservices/log_service/.venv/bin/activate; pip install -r /microservices/log_service/log_requirements.txt```
+7. Move to docker/mongodb
+```cd docker/mongodb```
+8. Run mongo database
+```docker-compose up -d```
+9. Finally, we provide a python script that run all services and populates the database
+```cd  ../../; python3 main.py```
 
-## Instalación y despliegue de ambiente para log_service
+The ip and port assignation as well as the database connection string can be changed as your preference in the main.py file.
 
-    python3 -m venv .venv
-    . .venv/bin/activate
-    flask --app log_service.py run --port=5003 --debug
+# Tests
+We deliver a collection of tests, which are the following:
+* Reach limit of request for a Freemium Account
+* Reach limit of request for a Premium Account
+* Test missing parameters
+* Test not authorized account
+* Test out of range parameters
+* Test services individually
+In order to access to these tests, you will need to import the files places in the test folder, and import them into Postman.
 
-
-## Instalación y despliegue de ambiente para user_service
-
-    python3 -m venv .venv
-
-    . .venv/bin/activate
-
-    pip install requests_cache
-
-    flask --app 'user_service:create_app(5001,5002,5003)' run --port=5000 --debug
-
-
-
-## Instalación de docker-compose
-
-    apt install docker-compose
-
-
-## Despliegue de contenedor Mongodb
-
-    cd /carpeta contenedora del archivo docker-compose.yml
-
-    docker-compose up -d
-
-# Playground
-
-Corriendo la aplicación Playground.py se pueden testear los microservicios:
-
-    authentication_service
-
-    prediction_service
-
-    log_service
-
-    user_service
-
-# Generador JSON
-
-Existen dos aplicaciones que permiten generar objetos de tipo JSON
-
-    generadorJSON.py: genera el archivo datos_generados.json utilizado para testear los microservicios user_service y prediction_service.
-
-    generador_log_JSON.py: genera el archivo datos_generados_log.json utilizado para testear el microservicio log_service.
-
-# Main
-
-Aplicación que permite ingestar usuarios en la base de datos mongo y desplegar los microservicios.
+# Documentation
+As we develop this app, we took several decisions, which were documented describing the context, reasons, benefits and consequences of each. Architectural Desicion Records can be acceded in the ADRs folder.
