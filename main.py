@@ -3,14 +3,14 @@ import sys
 import pymongo
 from pymongo import errors
 
-####### PORTS #########################
+####################### SOCKETS ##############################
 
-gateway_service_port = 5000
-authentication_service_port = 5001
-prediction_service_port = 5002
-log_service_port = 5003
+gateway_service_socket = {"ip":"localhost","port":"5000"}
+authentication_service_socket = {"ip":"localhost","port":"5001"}
+prediction_service_socket = {"ip":"localhost","port": "5002"}
+log_service_socket = {"ip":"localhost","port": "5003"}
 
-#######################################
+##############################################################
 
 #################### DB CONNECTION ###########################
 
@@ -53,19 +53,19 @@ def start_services():
     """Start all services with defined ports"""
 
     # Authentication service
-    command = "cd microservices/authentication_service; . .venv/bin/activate; flask --app 'authentication_service:create_app(\""+db_connection_string+"\")' run --port "+str(authentication_service_port)+" &"
+    command = "cd microservices/authentication_service; . .venv/bin/activate; flask --app 'authentication_service:create_app(\""+db_connection_string+"\")' run --port "+authentication_service_socket["port"]+" &"
     os.system(command)
 
     # Prediction service
-    command = "cd microservices/prediction_service; . .venv/bin/activate; flask --app prediction_service.py run --port "+str(prediction_service_port)+" &"
+    command = "cd microservices/prediction_service; . .venv/bin/activate; flask --app prediction_service.py run --port "+prediction_service_socket["port"]+" &"
     os.system(command)
 
     # Log service
-    command = "cd microservices/log_service; . .venv/bin/activate; flask --app 'log_service:create_app(\""+db_connection_string+"\")' run --port "+str(log_service_port)+" &"
+    command = "cd microservices/log_service; . .venv/bin/activate; flask --app 'log_service:create_app(\""+db_connection_string+"\")' run --port "+log_service_socket["port"]+" &"
     os.system(command)
 
     # Gateway_service
-    command = "cd microservices/gateway_service; . .venv/bin/activate; flask --app 'gateway_service:create_app("+str(authentication_service_port)+","+str(prediction_service_port)+","+str(log_service_port)+")' run --port "+str(gateway_service_port)+" &"
+    command = "cd microservices/gateway_service; . .venv/bin/activate; flask --app 'gateway_service:create_app(\""+authentication_service_socket["ip"]+"\",\""+authentication_service_socket["port"]+"\",\""+prediction_service_socket["ip"]+"\",\""+prediction_service_socket["port"]+"\",\""+log_service_socket["ip"]+"\",\""+log_service_socket["port"]+"\")' run --port "+gateway_service_socket["port"]+" &"
     os.system(command)
 
 main()

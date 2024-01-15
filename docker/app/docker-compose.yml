@@ -1,0 +1,48 @@
+version: '3'
+services:
+  gateway_service:
+    image: ncasaburi/cardiac_risk:gateway_service
+    ports:
+      - "5000:5000"
+    environment:
+      MONGO_URI: "mongodb://mongoadmin:secret@mongodb"
+    depends_on:
+      - mongodb
+  authentication_service:
+    image: ncasaburi/cardiac_risk:authentication_service
+    ports:
+      - "5001:5001"
+    expose:
+      - "5001"
+    environment:
+      MONGO_URI: "mongodb://mongoadmin:secret@mongodb"
+    depends_on:
+      - mongodb
+  prediction_service:
+    image: ncasaburi/cardiac_risk:prediction_service
+    ports:
+      - "5002:5002"
+    expose:
+      - "5002"
+    environment:
+      MONGO_URI: "mongodb://mongoadmin:secret@mongodb"
+    depends_on:
+      - mongodb
+  log_service:
+    image: ncasaburi/cardiac_risk:log_service
+    ports:
+      - "5003:5003"
+    expose:
+      - "5003"
+    environment:
+      MONGO_URI: "mongodb://mongoadmin:secret@mongodb"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: cardiac_risk
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: secret
