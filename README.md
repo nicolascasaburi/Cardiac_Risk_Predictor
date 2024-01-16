@@ -28,7 +28,7 @@ Moreover, a cache is implemented through the requests_cache library in order to 
 This is the recommended option as containers have all required python libraries already installed.
 Requirements: docker and docker-compose must be installed in your system before moving to the next step.
 1. Cloning this repo:
-```
+```ADR001 Link text
 git clone https://github.com/ncasaburi/Cardiac_Risk_Predictor.git
 ```
 2. Move to the app folder whithin the repo:
@@ -104,4 +104,11 @@ We deliver a collection of tests, which are the following:
 In order to access to these tests, you will need to import the files places in the test folder, and import them into Postman.
 
 # Documentation
-As we develop this app, we took several decisions, which were documented describing the context, reasons, benefits and consequences of each. Architectural Desicion Records can be acceded in the ADRs folder.
+As we develop this app, we took several decisions, which were documented describing the context, reasons, benefits and consequences of each. These are the Architectural Desicion Records related to the app:
+
+* [ADR 001: Use the microservice architecture style](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR001-microservice-style.md)
+* [ADR 002: Use of Python as the programming language](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR002-python.md)
+* [ADR 003: Use of Flask as the microservice framework](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR003-flask.md)
+* [ADR 004: Use of Tensorflow as the machine learning library](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR004-tensorflow.md)
+* [ADR 005: Use of an API gateway](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR005-gateway.md)
+* [ADR 006: Use of docker containers to distribute the microservices](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR006-containerization.md)
