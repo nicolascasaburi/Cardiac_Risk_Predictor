@@ -1,9 +1,13 @@
- # Developers
+## Developers
+ 
+* Casaburi, Nicolas
+* Casco, Julio
 
-    * Casaburi, Nicolas
-    * Casco, Julio
+## Institution
 
-# About
+* Universidad Nacional de La Plata
+
+## About
 > [!NOTE]
 > This software is part of an academic project, and shouldn't be used for real medical porpuses.
 
@@ -23,8 +27,8 @@ Moreover, a cache is implemented through the requests_cache library in order to 
 | 33d253c53e5739e7024a4f25abc81b22| freemium | 5 |
 | fb2f370aa9053ca5bb107d888180f94a| premium | 50 |
 
-# Instalation options
-## Docker containers (recommended)
+## Instalation options
+### Docker containers (recommended)
 This is the recommended option as containers have all required python libraries already installed.
 Requirements: docker and docker-compose must be installed in your system before moving to the next step.
 1. Cloning this repo:
@@ -48,7 +52,7 @@ Per default, the service ports are assigned as follows:
   
 The port assignation can be changed as your preference in the docker-compose.yml file.
 
-## Run services manually
+### Run services manually
 Requirements: python3, python3-venv and pip must be installed in your system before moving to the next step. Also, docker and docker-compose will be needed to run the mongo database.
 1. Cloning this repo
 ```
@@ -93,7 +97,7 @@ cd  ../../; python3 main.py
 
 The ip and port assignation as well as the database connection string can be changed as your preference in the main.py file.
 
-# Tests
+## Tests
 We deliver a collection of tests, which are the following:
 * Reach limit of request for a Freemium Account
 * Reach limit of request for a Premium Account
@@ -103,7 +107,7 @@ We deliver a collection of tests, which are the following:
 * Test services individually
 In order to access to these tests, you will need to import the files places in the test folder, and import them into Postman.
 
-# Documentation
+## Documentation
 As we develop this app, we took several decisions, which were documented describing the context, reasons, benefits and consequences of each. These are the Architectural Desicion Records related to the app:
 
 * [ADR 001: Use the microservice architecture style](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/ADRs/ADR001-microservice-style.md)
