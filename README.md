@@ -1,3 +1,4 @@
+# Cardiac Risk Predictor
 ## Developers
  
 * Casaburi, Nicolas
@@ -105,7 +106,13 @@ We deliver a collection of tests, which are the following:
 * Test not authorized account
 * Test out of range parameters
 * Test services individually
-In order to access to these tests, you will need to import the files places in the test folder, and import them into Postman.
+  
+In order to access to these tests, you will need to import one of these files, depending on the Postman version you have installed:
+
+* [Cardiac Risk Predictor.postman_collection_2.0.json](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/tests/Cardiac%20Risk%20Predictor.postman_collection_2.0.json)
+* [Cardiac Risk Predictor.postman_collection_2.1.json](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/tests/Cardiac%20Risk%20Predictor.postman_collection_2.1.json)
+
+and import them into Postman.
 
 ## Documentation
 As we develop this app, we took several decisions, which were documented describing the context, reasons, benefits and consequences of each. These are the Architectural Desicion Records related to the app:
