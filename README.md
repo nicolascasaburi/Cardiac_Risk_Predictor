@@ -107,7 +107,7 @@ We deliver a collection of tests, which are the following:
 * Test out of range parameters
 * Test services individually
   
-In order to access to these tests, you will need to import one of these files, depending on the Postman version you have installed:
+In order to access to these tests, you will need to download one of these files, depending on the Postman version you have installed:
 
 * [Cardiac Risk Predictor.postman_collection_2.0.json](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/tests/Cardiac%20Risk%20Predictor.postman_collection_2.0.json)
 * [Cardiac Risk Predictor.postman_collection_2.1.json](https://github.com/ncasaburi/Cardiac_Risk_Predictor/blob/main/tests/Cardiac%20Risk%20Predictor.postman_collection_2.1.json)
